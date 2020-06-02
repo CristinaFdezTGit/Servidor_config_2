@@ -1,0 +1,27 @@
+server:
+  port: 7000 #puerto del zuul service 
+zuul:
+  ignoredServices: '*'
+  routes:
+      miservicio-personas: # Service to create as sample
+        path: /servcursos/** #path that will be intercepted
+        serviceId: servicio-personas
+      miservicio-cliente-personas: # Service to create as sample
+        path: /servempleados/** #path that will be intercepted
+        serviceId: servicio-cliente-personas
+      servicio-reservas: # Service to create as sample
+        path: /reservas/** #path that will be intercepted
+        serviceId: servicio-reservas  
+      servicio-hoteles: # Service to create as sample
+        path: /hoteles/** #path that will be intercepted
+        serviceId: servicio-hoteles
+      servicio-vuelos: # Service to create as sample
+        path: /vuelitos/** #path that will be intercepted
+        serviceId: servicio-vuelos   
+  
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+      
+eureka:                  
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka 
