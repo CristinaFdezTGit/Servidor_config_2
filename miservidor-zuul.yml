@@ -5,10 +5,10 @@ zuul:
   routes:
       miservicio-personas: # Service to create as sample
         path: /servcursos/** #path that will be intercepted
-        serviceId: servicio-personas
+        serviceId: miservicio-personas
       miservicio-cliente-personas: # Service to create as sample
         path: /servempleados/** #path that will be intercepted
-        serviceId: servicio-cliente-personas
+        serviceId: miservicio-cliente-personas
       servicio-reservas: # Service to create as sample
         path: /reservas/** #path that will be intercepted
         serviceId: servicio-reservas  
