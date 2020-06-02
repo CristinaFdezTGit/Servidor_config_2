@@ -1,5 +1,5 @@
 server:
-  port: 8000             
+  port: 0 #indica que el puerto no lleva valor             
   servlet:
     context-path: /personas
 eureka:
@@ -9,4 +9,4 @@ eureka:
   instance:
     ip-address: 192.168.1.57
     prefer-ip-address: true
-    instance-id: 192.168.1.57:8000
+    instance-id: 192.168.1.57:${server.port} - ${random.value}
