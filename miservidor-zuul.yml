@@ -9,15 +9,6 @@ zuul:
       miservicio-cliente-personas: # Service to create as sample
         path: /servempleados/** #path that will be intercepted
         serviceId: miservicio-cliente-personas
-      servicio-reservas: # Service to create as sample
-        path: /reservas/** #path that will be intercepted
-        serviceId: servicio-reservas  
-      servicio-hoteles: # Service to create as sample
-        path: /hoteles/** #path that will be intercepted
-        serviceId: servicio-hoteles
-      servicio-vuelos: # Service to create as sample
-        path: /vuelitos/** #path that will be intercepted
-        serviceId: servicio-vuelos   
   
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
       
